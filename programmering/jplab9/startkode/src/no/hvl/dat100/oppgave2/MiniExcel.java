@@ -12,15 +12,17 @@ public class MiniExcel {
 
 	public static void skrivUt() {
 
-		System.out.println("---------------");
-
-		// TODO - START
-
-		// iterer igjennom tabellen og skriv ut - utvidet for-løkke
-
-		// TODO _END
-
-		System.out.println("---------------");
+		System.out.println("-----");
+		
+		
+		for (int[]rekker : data) {
+			for(int soyler : rekker) {
+				System.out.print(soyler +" ");
+			}
+				System.out.println();	
+					
+			}
+		System.out.println("-----");
 	}
 
 	public static void beregnSum() {
@@ -32,6 +34,41 @@ public class MiniExcel {
 
 		// TODO - END
 
+		
+		for(int i = 0; i <data.length-1; i++) {
+			for(int j = 0; i < data[i].length-1; j++) {
+				int radSum = 0;
+				radSum += data[i][j];
+			}
+			
+				
+				
+			}
+		}
+				
+				
+			
+		
+
+		
+	}System.out.println("-----");
+	
+	
+	for (int[]rekker : data) {
+		for(int soyler : rekker) {
+			System.out.print(soyler +" ");
+		}
+			System.out.println();	
+			
+			
+			
+		}
+	
+	
+
+	System.out.println("-----");
+}
+
 		// TODO - START
 
 		// for hver kolonne (med unntak av siste kolonne) summer elementene 
@@ -39,14 +76,12 @@ public class MiniExcel {
 		
 		// TODO - END
 
-	}
+	
 
 	public static void main(String args[]) {
 
 		skrivUt();
 
 		beregnSum();
-
-		skrivUt();
 	}
 }

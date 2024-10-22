@@ -16,9 +16,15 @@ public class Oppdatering {
 				System.out.println("]");
 				
 		// oppdater
-		for (int x : tab) {
+		System.out.print("[ ");
+				for (int x : tab) {
 			x = x + 1;
-		}
+			System.out.print(x+ " ");
+		
+				}{System.out.println("]");
+				}
+				
+				
 
 		// skriv ut
 		System.out.print("[ ");
